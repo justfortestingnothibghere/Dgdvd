@@ -1,0 +1,4 @@
+flask==3.0.3
+terabox-downloader==1.0.0  # Latest version, check PyPI
+requests==2.32.3
+gunicorn==22.0.0  # Vercel ke liye optional, but safe
