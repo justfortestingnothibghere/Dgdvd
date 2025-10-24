@@ -1,15 +1,17 @@
 {
   "version": 2,
+  "name": "terabox-downloader",
   "builds": [
     {
-      "src": "api/index.py",
+      "src": "api/*.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "api/index.py"
+      "src": "/api/download",
+      "methods": ["GET"],
+      "dest": "/api/download.py"
     }
   ]
 }
